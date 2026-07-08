@@ -1,0 +1,24 @@
+:root {
+    /* Paleta de Cores Baseada no Logo e Briefing */
+    --color-primary-gold: #F5A646;
+    --color-secondary-copper: #A16244;
+    --color-brand-blue: #0B132B;
+    --color-gray-text: #9CA3AF;
+    
+    /* Cores de Superfície (Modo Claro Padrão) */
+    --bg-main: #FAFAFA;
+    --bg-surface: #FFFFFF;
+    --text-main: #1F2937;
+    --text-muted: #4B5563;
+    --border-color: #E5E7EB;
+
+    /* Tipografia */
+    --font-heading: 'Lora', Georgia, serif; /* Leitura confortável para títulos */
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif; /* Limpeza e modernidade */
+    
+    /* Configurações de Transição */
+    --transition-smooth: all 0.3s ease;
+    
+    /* Grid & Layout */
+    --max-width: 1200px;
+}

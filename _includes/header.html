@@ -1,0 +1,33 @@
+<header class="site-header" id="smart-header">
+    <div class="header-container">
+        <button class="mobile-menu-toggle" id="menu-open-btn" aria-label="Abrir menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img src="{{ '/assets/images/LOGO_ALEM_DA_LETRA.jpg' | relative_url }}" alt="Bíblia Além da Letra" class="site-logo">
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+            <button class="mobile-menu-close" id="menu-close-btn" aria-label="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ '/estudos/' | relative_url }}" class="nav-link">Estudos</a>
+            <a href="{{ '/categorias/' | relative_url }}" class="nav-link">Categorias</a>
+            <a href="{{ '/sobre/' | relative_url }}" class="nav-link">Sobre</a>
+            <a href="{{ '/contato/' | relative_url }}" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="{{ '/pesquisa/' | relative_url }}" class="search-btn" aria-label="Pesquisar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </a>
+            <button class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Alternar tema">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menu-overlay"></div>

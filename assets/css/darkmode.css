@@ -1,0 +1,15 @@
+/* Sobrescrita de Tokens para o Modo Escuro */
+[data-theme="dark"] {
+    /* Superfícies Invertidas para Leitura Confortável */
+    --bg-main: #0B0F19;      /* Azul Grafite ultra escuro para o fundo geral */
+    --bg-surface: #1E2538;   /* Azul Marinho mais claro para cards e blocos */
+    --border-color: #2D3748; /* Linhas divisórias sutis */
+    
+    /* Tipografia Adaptada para Alto Contraste */
+    --text-main: #F3F4F6;    /* Branco acinzentado de alta legibilidade */
+    --text-muted: #9CA3AF;   /* Cinza claro para textos secundários e datas */
+    
+    /* Ajustes na Paleta da Marca para Telas Escuras */
+    --color-primary-gold: #FBBF24; /* Ouro ligeiramente mais vibrante no escuro */
+    --color-secondary-copper: #C27E5D; /* Terracota suavizado */
+}

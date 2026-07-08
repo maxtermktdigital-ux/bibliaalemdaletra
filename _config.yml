@@ -1,0 +1,34 @@
+# Configurações Globais
+title: "Bíblia Além da Letra"
+tagline: "Estudos Bíblicos Teológicos e Devocionais Diários"
+description: "Aprofunde seu conhecimento na Palavra com estudos profundos e devocionais diários."
+url: "https://seu-usuario.github.io"
+baseurl: ""
+
+# Autoría
+author:
+  name: "Moreira"
+  email: "contato@bibliaalemdaletra.com.br"
+
+# Configurações de Arquivos
+source: .
+destination: _site
+layouts_dir: _layouts
+includes_dir: _includes
+collections:
+  posts:
+    output: true
+    permalink: /estudos/:title/
+
+# Plugins homologados pelo GitHub Pages
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown & Highlighting
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

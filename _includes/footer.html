@@ -1,0 +1,22 @@
+<footer class="site-footer" style="background-color: var(--color-brand-blue); color: var(--text-main); padding: 40px 20px; margin-top: 60px; border-top: 1px solid var(--border-color);">
+    <div class="footer-container" style="max-width: var(--max-width); margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+        
+        <div class="footer-brand" style="flex: 1; min-width: 250px;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-primary-gold); margin-bottom: 15px;">{{ site.title }}</h4>
+            <p style="color: var(--gray-text); font-size: 0.9rem; line-height: 1.5; max-width: 300px;">{{ site.description }}</p>
+        </div>
+
+        <div class="footer-links" style="flex: 1; min-width: 150px;">
+            <h5 style="font-family: var(--font-body); font-size: 1rem; color: #FFFFFF; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.05em;">Navegação</h5>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                <li><a href="{{ '/' | relative_url }}" style="color: var(--gray-text); text-decoration: none; font-size: 0.95rem;">Início</a></li>
+                <li><a href="{{ '/estudos/' | relative_url }}" style="color: var(--gray-text); text-decoration: none; font-size: 0.95rem;">Estudos Bíblicos</a></li>
+                <li><a href="{{ '/categorias/' | relative_url }}" style="color: var(--gray-text); text-decoration: none; font-size: 0.95rem;">Categorias</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom" style="width: 100%; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; text-align: center; font-size: 0.85rem; color: var(--gray-text);">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Desenvolvido com excelência técnica.</p>
+        </div>
+    </div>
+</footer>

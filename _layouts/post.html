@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="post-article">
+    <header class="post-header">
+        <div class="post-meta">
+            <span class="post-date">{{ page.date | date: "%d/%m/%Y" }}</span> • 
+            <span class="post-author">Por {{ page.author }}</span>
+        </div>
+        <h1 class="post-title">{{ page.title }}</h1>
+        
+        <div class="post-categories">
+            {% for category in page.categories %}
+                <a href="{{ '/categorias/' | relative_url }}#{{ category | slugify }}" class="category-badge">{{ category }}</a>
+            {% endfor %}
+        </div>
+    </header>
+
+    {% if page.image %}
+    <div class="post-featured-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+    </div>
+    {% endif %}
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer">
+        <div class="post-tags">
+            {% for tag in page.tags %}
+                <span class="tag-item">#{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </footer>
+	
+	<!-- GERAR COMENTAÁRIO - ABRE VER COMENTÁRIOS SE CLICAR NO LINK -->
+	<section class="post-comments-section" style="margin-top: 40px; padding-top: 30px; border-top: 1px dashed var(--border-color);">
+        <div id="comments-trigger-wrapper" style="text-align: center;">
+            <button id="load-comments-btn" onclick="loadGiscusComments()" style="background-color: var(--color-brand-blue); color: #FFFFFF; border: 1px solid var(--border-color); padding: 12px 24px; font-family: var(--font-body); font-weight: 600; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Ver comentários e reflexões
+            </button>
+        </div>
+        <div id="giscus-container" style="margin-top: 30px;"></div>
+    </section>
+</article>

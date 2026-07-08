@@ -1,0 +1,58 @@
+@import url('variables.css');
+@import url('darkmode.css');
+
+/* Estilos de reset base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@import url('variables.css');
+@import url('darkmode.css');
+@import url('header.css'); /* Adicionado */
+
+@import url('variables.css');
+@import url('darkmode.css');
+@import url('header.css');
+@import url('responsive.css'); /* Adicionado */
+
+/* Estilos de reset base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    padding-top: 70px; /* Evita que o Header Fixo cubra o início do conteúdo */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*REGISTRO DE CARD ONDE UMA CAIXA FICA COM FUNDO E CANTOS NA COR OURO COM O ICONE DE UMA BIBLIA ABERTA */
+
+@import url('variables.css');
+@import url('darkmode.css');
+@import url('header.css');
+@import url('responsive.css');
+@import url('cards.css'); /* Adicionado para a caixa teológica */
+
+/* EDIÇÃO formatação dos textos longos dos estudos.*/
+
+@import url('variables.css');
+@import url('darkmode.css');
+@import url('header.css');
+@import url('responsive.css');
+@import url('cards.css');
+@import url('post.css'); /* Adicionado */
+

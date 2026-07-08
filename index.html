@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Início"
+---
+
+<section class="home-hero">
+    <div class="hero-container" style="max-width: var(--max-width); margin: 40px auto 0 auto; padding: 0 20px; text-align: center;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--text-main); margin-bottom: 10px;">{{ site.tagline }}</h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">{{ site.description }}</p>
+    </div>
+</section>
+
+<div class="container" style="max-width: var(--max-width); margin: 0 auto; padding: 0 20px;">
+    <h3 style="font-family: var(--font-body); font-size: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px;">Últimos Estudos Publicados</h3>
+    
+    <div class="posts-grid">
+        {% for post in site.posts %}
+        <article class="post-card">
+            <a href="{{ post.url | relative_url }}" class="card-image-link">
+                {% if post.image %}
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-image" loading="lazy">
+                {% else %}
+                    <img src="{{ '/assets/images/default-thumbnail.jpg' | relative_url }}" alt="{{ post.title }}" class="card-image" loading="lazy">
+                {% endif %}
+            </a>
+            
+            <div class="card-content">
+                <div class="card-meta">
+                    <span class="card-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                    <span class="card-category">
+                        {% if post.categories.size > 0 %}
+                            {{ post.categories | first }}
+                        {% endif %}
+                    </span>
+                </div>
+                
+                <h4 class="card-title">
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h4>
+                
+                <p class="card-excerpt">
+                    {{ post.excerpt | strip_html | truncatewords: 25 }}
+                </p>
+                
+                <a href="{{ post.url | relative_url }}" class="card-readmore">
+                    Ler estudo completo 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
