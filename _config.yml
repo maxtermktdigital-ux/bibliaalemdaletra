@@ -2,8 +2,9 @@
 title: "Bíblia Além da Letra"
 tagline: "Estudos Bíblicos Teológicos e Devocionais Diários"
 description: "Aprofunde seu conhecimento na Palavra com estudos profundos e devocionais diários."
-url: "https://seu-usuario.github.io"
-baseurl: ""
+# Configurações de URL para Produção no GitHub Pages
+url: "https://maxtermktdigital-ux.github.io"
+baseurl: "/bibliaalemdaletra"
 
 # Autoría
 author:
